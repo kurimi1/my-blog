@@ -15,7 +15,7 @@ font_size: L
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: ''
+description: 'Donald Blog'
 twitter: ''
 
 # Site header
@@ -31,8 +31,8 @@ main_menu:
 
 # Localization
 
-date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
+date_format: '01/02/06'
+time_format: '15:04'
 
 # Site features
 
@@ -50,7 +50,7 @@ edit_page:
     post: false
 show_related:
   post: true
-email: test@example.org
+email: d0n41df@gmail.com
 sharing_image: ''
 reading_time: true
 section_pager: true

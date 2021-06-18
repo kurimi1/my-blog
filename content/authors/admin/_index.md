@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Donald F
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: DevSecOps Engineer
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: China
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include DevSecOps, Golang and OSINT.
 
 #interests:
 #- Artificial Intelligence
@@ -40,13 +40,13 @@ bio: My research interests include distributed robotics, mobile computing and pr
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'about/#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: 'mailto:d0n41df@gmail.com'  # For a direct email link, use "mailto:test@example.org".
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/GeorgeCushen
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/kurimi1
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -57,6 +57,14 @@ social:
 #email: ""
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+技术分享，golang，安全，红队，OSINT，kubernets，遇见的坑，算法，一些记录。
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+日常的技术记录，同时也分享至网络。
+
+我是一个健忘的人，因此创建此博客来记录一些东西。
+
+希望我的记录可以帮助到有需要的人。
+
+保持完整的教程与记录，做到100%可复现。
+
+遇到问题可以直接联系我。
