@@ -20,3 +20,5 @@ categories:
 添加option
 >conf.MustLoad(*configFile, &c, conf.UseEnv())
 但其他地方不得出现$,会造成误判
+
+## 数据库建立索引会自动生成find代码
