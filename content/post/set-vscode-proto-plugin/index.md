@@ -21,5 +21,5 @@ categories:
 
 ## 插件配置
 
-"clang-format.style": "google"
-"clang-format.style": "{ IndentWidth: 4, BasedOnStyle: google, AlignConsecutiveAssignments: true }"
+"clang-format:fallback style": "google"
+"clang-format.language.proto:style": "{ IndentWidth: 4, BasedOnStyle: google, AlignConsecutiveAssignments: true }"

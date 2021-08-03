@@ -33,3 +33,8 @@ message foo {
 message boo {
     repeated foo results = 1;
 }
+
+## 导入官方提供的proto文件，time
+
+放置到/usr/local/include
+<https://ask.csdn.net/questions/1010240>

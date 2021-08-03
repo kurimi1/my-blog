@@ -8,10 +8,12 @@ tags:
 - mysql
 - note
 categories:
-- 数据库
-- 踩坑
-- 笔记
+- mysql
 ---
+
+## 好的总结
+
+<https://blog.csdn.net/guorui_java/article/details/118558095>
 
 ## mysql修改密码
 
