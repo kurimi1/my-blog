@@ -23,3 +23,10 @@ must下匹配，filter进行过滤，range定义范围
 term 精准
 match 模糊
 match_phrase 模糊但只保留那些包含全部搜索词项，且位置与搜索词项相同的文档
+
+## docker 部署的ES无法探测
+
+解决方法：
+set false
+
+> client, err = elastic.NewClient(elastic.SetSniff(false), elastic.SetURL(es_addr))
