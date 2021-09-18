@@ -30,3 +30,21 @@ match_phrase 模糊但只保留那些包含全部搜索词项，且位置与搜�
 set false
 
 > client, err = elastic.NewClient(elastic.SetSniff(false), elastic.SetURL(es_addr))
+
+## eck 安装es，取消安全选项
+
+### eck需要配置
+
+setDefaultSecurityContext: false
+
+### es 需要配置
+
+config:
+      xpack.security.enabled: false
+      xpack.security.http.ssl.enabled: false
+      xpack.security.transport.ssl.enabled: false
+      xpack.security.authc.reserved_realm.enabled: false
+
+### 其他配置
+
+取消就绪检测等
