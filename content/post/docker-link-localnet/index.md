@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Hugo Notes"
-subtitle: "hugo"
-summary: "简单记录 hugo 使用笔记"
+title: "Docker Link Localnet"
+subtitle: ""
+summary: "docker 访问本地网络"
 authors: [admin]
-tags: [hugo]
+tags: [docker]
 categories: [notes]
-date: 2022-03-07T11:29:57+08:00
-lastmod: 2022-03-07T11:29:57+08:00
+date: 2022-03-04T18:21:45+08:00
+lastmod: 2022-03-04T18:21:45+08:00
 featured: false
 draft: false
 
@@ -17,9 +17,8 @@ draft: false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
-  focal_point: "Center"
+  focal_point: ""
   preview_only: false
-  placement: 2
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -29,24 +28,14 @@ image:
 projects: []
 ---
 
-## 下载
+## 设置net为host
 
-有些主题可能不支持，一定要下载extended版本。
+> docker run --net host
 
-## 本地预览命令
+可直接访问
 
-> hugo server --bind 0.0.0.0 -D
+## 使用默认的bridge
 
--D 代表编译草稿
-
-## 创建post
-
-> hugo new --kind post post/my-article-name
-
-## 编译命令
-
-> hugo -D
-
-## 发布
-
-push 到 github
+> docker network inspect bridge
+> 
+查看网关，通过网关访问本地网络

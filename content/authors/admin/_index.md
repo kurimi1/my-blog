@@ -6,15 +6,19 @@ title: Donald F
 superuser: true
 
 # Role/position
-role: DevSecOps Engineer
+role: 技术追求者
+
+# Status emoji
+status:
+  icon: ☕️
 
 # Organizations/Affiliations
 organizations:
-- name: China
+- name: 乌托邦
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include DevSecOps, Golang and OSINT.
+bio: My research interests include Golang, DevSecOps and Read Team.
 
 #interests:
 #- Artificial Intelligence
@@ -43,10 +47,19 @@ social:
   link: 'mailto:d0n41df@gmail.com'  # For a direct email link, use "mailto:test@example.org".
 # - icon: twitter
 #   icon_pack: fab
-#   link: https://twitter.com/GeorgeCushen
+#   link: https://twitter.com/wowchemy
+# - icon: instagram
+#   icon_pack: fab
+#   link: https://instagram.com/geocushen
 - icon: github
   icon_pack: fab
   link: https://github.com/kurimi1
+
+# Uncomment below for Github link
+#- icon: github
+#  icon_pack: fab
+#  link: https://github.com/gcushen
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -57,14 +70,12 @@ social:
 #email: ""
 ---
 
-技术分享，golang，安全，红队，OSINT，kubernets，遇见的坑，算法，一些记录。
+文档与搜索引擎解决不了的问题
 
-日常的技术记录，同时也分享至网络。
+技术领域总结
 
-创建此博客来记录一些东西。
+为了Start up
 
-希望我的记录可以帮助到有需要的人。
+或许可以记录一些生活
 
-保持完整的教程与记录，做到100%可复现。
-
-遇到问题可以直接联系我。
+总结学习到的知识

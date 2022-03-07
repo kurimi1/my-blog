@@ -1,7 +1,7 @@
 ---
 title: go控制协程并发数量
 summary: 方式比较到最佳实践
-date: "2021-11-3"
+date: "2021-11-03"
 authors:
 - admin
 tags:

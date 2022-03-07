@@ -1,6 +1,6 @@
 ---
 # Use the Intro widget of the Blog template
-widget: starter.blog.intro
+widget: about.avatar
 
 # This file represents a page section.
 headless: true
@@ -8,11 +8,17 @@ headless: true
 # Order that this section will appear in.
 weight: 10
 
-title: ✏️ Donald Blog
-subtitle: 技术记录
+author: admin
 
-design:
-  background:
-    color: '#090a0b'
-    text_color_light: true
+#design:
+#  background:
+#    color: '#090a0b'
+#    text_color_light: true
+#    video:
+#      path:  # enter filename of a video in /assets/media
+#  css_class: fullscreen
 ---
+
+🐈 Hey! I'm **Donald**, a hacker at Utopia.
+
+Check out my [CV](/about/) and blog posts below 🌈
