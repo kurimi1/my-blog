@@ -45,7 +45,7 @@ projects: []
 
 ## 编译命令
 
-> hugo -D
+> hugo
 
 ## 发布
 
