@@ -33,6 +33,8 @@ projects: []
 
 有些主题可能不支持，一定要下载extended版本。
 
+>go install --tags extended github.com/gohugoio/hugo@latest
+
 ## 本地预览命令
 
 > hugo server --bind 0.0.0.0 -D

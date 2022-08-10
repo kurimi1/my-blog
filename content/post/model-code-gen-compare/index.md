@@ -28,13 +28,39 @@ image:
 projects: []
 ---
 
+## go orm 集合
+
+<https://github.com/d-tsuji/awesome-go-orms>
+
 ## go-zero
+
+根据数据库或sql生成代码
+
+对除mysql外不友好
+
+有缓存代码
+
+类sql模式
 
 ## ent
 
-## gorm
+<https://github.com/ent/ent>
 
-## gorm2
+根据自定义的schame生成数据库和代码
+
+文档好
+
+有第三方缓存<https://github.com/ariga/entcache>
+
+## go-gorm/gen
+
+<https://github.com/go-gorm/gen/> 字节无恒实验室
+
+根据数据库生成代码
+
+文档太烂
+
+没缓存
 
 ## sqlc
 
