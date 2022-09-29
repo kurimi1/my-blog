@@ -27,6 +27,11 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+## 作用
+
+1. 性能分析
+2. 内存泄露
+
 ## 只运行一次
 
 文档<https://pkg.go.dev/runtime/pprof>
@@ -86,6 +91,17 @@ go func() {
 
 地址：<http://localhost:6060/debug/pprof>
 
+## 下载pprof文件
+
+直接go tool pprof <http://localhost:6060/debug/pprof/heap>,会自动下载文件
+cpu是/profile,默认采集30s内的
+
+curl -s /xxx > xx 下载
+
+直接通过web查看
+
+>go tool pprof -http=[host]:[port] [options] <http://localhost:6060/debug/pprof/heap>
+
 ## pprof命令行
 
 官方文档<https://github.com/google/pprof/blob/main/doc/README.md>
@@ -102,3 +118,49 @@ go func() {
 ## bench
 
 go test -bench -cpuprofile xxx
+
+## --base 参数2个profile对比
+
+--base x y
+
+## 内存逃逸分析
+
+通过pprof确认内存泄露代码位置，根据以下逃逸类型进行分析。逃逸后会被gc回收，但影响运行速度！
+
+### 编译静态分析
+
+> -gcflags "-m" -l关闭内联
+
+### 指针逃逸
+
+函数返回局部变量指针，则局部变量被分配到堆上。
+准则：除了大结构体，make，new，其他变量一律不使用指针。
+
+### 栈空间不足
+
+就算make，new没有回传指针，但超过系统栈空间也会分配到堆上。小于栈则分配到栈上，但如果返回指针则分配到堆上。当不确定大小时，分配到堆。给出cap分配到栈可以提高性能！
+ulimit -s 查看栈大小
+
+### interface 动态类型逃逸
+
+fmt.Println 会使变量逃逸，但println 不会
+
+### 闭包引用逃逸
+
+闭包：一个函数和其周围状态的引用捆绑在一起，这样的组合就是闭包。也就是说，闭包让你可以在一个内层函数中访问到其外层函数的作用域。
+
+```go
+func Increase() func() int {
+    n := 0
+    return func() int {
+        n++
+        return n
+    }
+}
+
+func main() {
+    in := Increase()
+    println(in()) // 1
+    println(in()) // 2
+}
+```
