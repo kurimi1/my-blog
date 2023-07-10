@@ -23,8 +23,8 @@ go test -run ^xxx&
 
 ## 基准测试
 
-> go test -benchmem -run=^& -bench ^xxx$
-必须使用-run=^&才能指定测试某个基准测试，否在单测基测都会执行
+> go test -benchmem -run ^xxx& -bench ^xxx$
+必须使用-run ^xxx&才能指定测试某个基准测试，否在单测基测都会执行
 
 ## 并发基准测试
 
@@ -36,3 +36,5 @@ b.Runparallel(func(pb *testing.PB) {
     }
 })
 ```
+
+也可以使用parallel flag
